@@ -1,0 +1,22 @@
+extends: airbnb
+env:
+  node: true
+parser: babel-eslint
+plugins:
+  - react
+settings:
+  import/resolver:
+    node:
+      extensions:
+        - .js
+        - .jsx
+        - .android.js
+        - .ios.js
+rules:
+  semi: [2, "never"]
+  comma-dangle: 0
+  no-underscore-dangle: off
+  global-require: 0
+  react/jsx-filename-extension: [1, { "extensions": [".js", ".jsx"] }]
+  react/require-extension: "off"
+  import/no-extraneous-dependencies: [0, {"devDependencies": false, "optionalDependencies": false, "peerDependencies": false}]
