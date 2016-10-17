@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint src __tests__"
   },
   "dependencies": {
     "react": "15.3.2",
