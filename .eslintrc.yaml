@@ -19,4 +19,5 @@ rules:
   global-require: 0
   react/jsx-filename-extension: [1, { "extensions": [".js", ".jsx"] }]
   react/require-extension: "off"
+  react/prefer-stateless-function: [2, {"ignorePureComponents": true}]
   import/no-extraneous-dependencies: [0, {"devDependencies": false, "optionalDependencies": false, "peerDependencies": false}]
