@@ -10,6 +10,17 @@ $ cd my-simple-lists
 $ npm install or yarn
 ```
 
+## Upgrading
+
+```shell
+$ cd my-simple-lists
+$ npm install --save react-native@X.Y or yarn add react-native@X.Y
+$ react-native upgrade
+$ react-native link (if necessary)
+```
+
+> See the official documentation: [Upgrading](https://facebook.github.io/react-native/docs/upgrading.html)
+
 ## Scripts
 
 ### Development
