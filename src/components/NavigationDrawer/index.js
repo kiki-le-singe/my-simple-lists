@@ -53,6 +53,8 @@ export default class NavigationDrawer extends PureComponent {
 
     return (
       <Drawer
+        captureGestures
+        panOpenMask={0.02}
         negotiatePan
         tapToClose
         openDrawerOffset={0.2}
