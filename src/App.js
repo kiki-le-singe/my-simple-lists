@@ -10,6 +10,7 @@ import Category from './scenes/Category'
 import NavigationDrawer from './components/NavigationDrawer'
 import LeftIcon from './components/LeftIcon'
 import layoutStyles from './styles/layout'
+import CategoriesStore from './mobx/categoriesStore'
 
 const { titleStyle, navigationBarStyle, leftButtonIconStyle } = layoutStyles
 const leftIcon = () => (
@@ -19,9 +20,11 @@ const leftIcon = () => (
   />
 )
 
+const store = CategoriesStore
+
 export default function App() {
   return (
-    <Router>
+    <Router store={store}>
       <Scene key="root">
         <Scene key="drawer" component={NavigationDrawer} open={false}>
           <Scene key="main">
